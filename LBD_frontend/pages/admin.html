@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/admin.css">
+    <title>Admin - Local Business Directory</title>
+</head>
+<body onload="checkauth()">
+    <div class="admin-header">
+        <a href="../index.html"><h1>Admin Panel</h1></a>
+        <a href="./register.html" class="register-link">Register</a>
+    </div>
+
+    <section id="business-section">
+        <h2>Businesses</h2>
+        <div id="busLoc"></div>
+    </section>
+
+    <section id="add-business-section">
+        <h2>Add New Business</h2>
+        <form id="add-business-form" class="business-form" enctype="multipart/form-data">
+            <!-- Your form fields go here -->
+            <label for="businessName">Business Name:</label>
+            <input type="text" id="businessName" name="name" required>
+
+            <label for="category">Category:</label>
+            <input type="text" id="category" name="category" required>
+            
+            <label for="contact">Contact:</label>
+            <input type="text" id="contact" name="contact" required>
+
+            <label for="ownerId">Owner ID:</label>
+            <input type="text" id="ownerId" name="ownerId" required>
+
+            <label for="district">District:</label>
+            <input type="text" id="district" name="district" required>
+
+            <label for="sector">Sector:</label>
+            <input type="text" id="sector" name="sector" required>
+
+            <label for="business-image">Business Image:</label>
+            <input type="file" id="business-image" name="images" accept="image/*">
+            
+
+            <button type="submit">Add Business</button>
+        </form>
+    </section>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>

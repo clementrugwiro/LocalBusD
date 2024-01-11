@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../css/contact.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+
+    <title>Local Business directory</title>
+</head>
+<body onload="checklogg()">
+    <div class="header">
+        <div class="headerName" > <a href="./admin.html"><h1><span id="clec">Local Business</span>  Directory</h1></a></div>
+        <div class="headerBtn">
+            <ul>
+                <li><a href="../index.html"><img id="nav-ico" src="../images/homepage.png" alt=""><input type="button" id="btn" value="HOME"></a> </li>
+                <li><a href="./about.html"><img id="nav-ico" src="../images/about.png" alt=""><input type="button" id="btn"  value="BUSINESS"></a></li>
+                <li><a href="./contact.html"><img id="nav-ico" src="../images/email.png" alt=""><input type="button" id="btn" value="CONTACT"></a></li>
+                <li><a href="../pages/login.html"><img id="nav-ico" src="../images/homepage.png" alt=""><input type="button" id="btn" class="login" value="LOGIN"></a> </li>
+                <li><img id="nav-ico" src="../images/homepage.png" alt=""><input type="button" onclick="logout()" id="logout" class="logout" value="LOGOUT"> </li>
+            </ul>
+        </div>
+    </div>
+    <section>
+        <div class="contact">
+            <div class="con-form">
+                <h3>CONTACT ME</h3>
+                <P>I am happy to answer any questions that you have. just send a message in the form below with anyy questions you may have.</P>
+    
+    
+                <form action="/" id="form">
+                   <div id="inputcontrol">
+                    <h3>NAME</h3> <div class="error"></div>
+                    <input type="text" name="name" id="con-name">
+                   </div>
+                   <div id="inputcontrol">
+                    <h3>YOUR EMAIL</h3><div class="error"></div>
+                    <input type="text" name="email" id="con-email">
+                   </div>
+                   <div id="inputcontrol">
+                    <h3>SUBJECT & BUSINESS</h3><div class="error"></div>
+                    <input type="text" name="subject" id="con-subject">
+                   </div>
+                   <div id="inputcontrol">
+                    <h3>YOUR MESSAGE & REVIEW</h3><div class="error"></div>
+                   <textarea name="message" id="con-msg" cols="53" rows="10"></textarea>
+                    <!-- <input type="text" name="message" row id="con-msg"><br> -->
+                   </div>
+                    <input id="send-btn"  type="submit" value="SEND" >
+                </form>
+            </div>
+            <div class="con-info">
+                <h3>EMAIL</h3>
+                <h5>Localbusinessd@gmail.com</h5>
+                <h3>PHONE</h3>
+                <h5>+250784195425</h5>
+                <h3>ONTHEWEB</h3>
+                <ul><li><a href="#">twitter</a></li><li><a href="#">facebook</a></li><li><a href="#">instagram</a></li></ul>
+            </div>
+        </div>
+    </section>
+    <section id="down">
+    <div class="footer">
+        <div><p id="foot">localbusinessd@gmail.com</p></div>
+        <div>
+            <ul>
+                <li><a href="#"><img id="icon" src="../images/twitter (1).png" alt=""></a></li>
+                <li><a href="#"><img id="icon" src="../images/linkedin.png" alt=""></a></li>
+                <li><a href="#"><img id="icon" src="../images/instagram.png" alt=""></a></li>
+                <li><a href="#"><img id="icon" src="../images/facebook.png" alt=""></a></li>
+            </ul>
+        </div>
+        <div ><p  id="foot">+250784195425</p></div>
+    </div>  
+    </section>
+    <script src="../index.js"></script>
+</body>
+</html>

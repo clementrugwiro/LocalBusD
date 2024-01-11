@@ -1,0 +1,78 @@
+.contact{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.con-form p{
+    margin-bottom: 60px;
+    color: rgb(193,204,214);
+    font-family: 'Cinzel', serif;
+}
+.con-form{
+    width: 60%;
+}
+
+.con-form h3{
+    color: rgb(193,204,214);
+    font-family: 'Cinzel', serif;
+    margin-bottom: 10px;
+}
+.con-form input{
+    width: 400px;
+    border-radius: 5px;
+    height: 25px;
+}
+#con-msg{
+    border-radius: 5px;
+}
+.con-info{
+    padding: 50px;
+}
+.con-info h3{
+    color: rgb(193,204,214);
+    font-family: 'Cinzel', serif;
+    margin-bottom: 5px;
+}
+.con-info h5{
+    margin-top: 5px;
+    color: rgb(193,204,214);
+    font-family: 'Cinzel', serif;
+    font-size: 17px;
+}
+
+.headerName a{
+    text-decoration: none;
+}
+.contact li{
+    display: inline;
+    border-left: 1px solid rgb(193,204,214);
+    font-size: 20px;
+    margin-left: 5px;
+    
+}
+.contact ul{
+    margin-top: 5px;
+    margin-left: -40px;
+}
+.contact a{
+    text-decoration: none;
+    color: rgb(193,204,214);
+}
+#send-btn{
+    background-color: rgb(78,83,87);
+    color: black;
+    width: 200px;
+    font-size: 18px;
+    font-weight: 500;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+    padding: 0;
+    margin-top: 40px;
+}
+#send-btn:hover{
+    background-color: rgb(251, 216, 127);
+    cursor: pointer;
+}

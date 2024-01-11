@@ -1,0 +1,137 @@
+/* Your CSS styles for the admin page go here */
+body {
+    font-family: 'Cinzel', serif; /* Change font family */
+    margin: 0;
+    padding: 0;
+    background-color: #333333; /* Dark Grey Background */
+    color: #dddddd; /* Light Grey Text */
+}
+
+.admin-header a {
+    color: inherit; /* Inherit the text color from the parent (usually black) */
+    text-decoration: none; 
+}
+.admin-header {
+    background-color: #000000; /* Black Header Background */
+    color: rgb(251, 216, 127); /* Light Yellow Text */
+    padding: 10px;
+    text-align: center;
+    
+}
+
+#business-section,
+#add-business-section {
+    margin: 20px;
+}
+
+/* Your existing styles go here */
+
+#busLoc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#about {
+    width: 320px;
+    margin: 20px;
+    padding: 15px;
+    border: 1px solid #555555; /* Border Color for Business Details */
+    background-color: #444444; /* Darker Grey Background for Business Details */
+    border-radius: 8px;
+}
+
+#aboutme {
+    padding-bottom: 15px;
+}
+
+#aboutme h1 {
+    margin: 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #dddddd; /* Light Grey Bottom Border for Business Name */
+}
+
+#who {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#ques,
+#ans {
+    flex: 1;
+    border-bottom: 1px solid #555555; /* Border between WHO and WHEN sections */
+}
+
+#ques h3,
+#ans h3 {
+    margin: 0;
+    font-weight: normal;
+    color: #dddddd; /* Light Grey Text in WHO and WHEN sections */
+}
+
+#aboutpic {
+    margin-top: 15px;
+}
+
+#aboutpic img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    filter: grayscale(50%); /* Apply grayscale to the business image */
+}
+
+/* Style for the form and delete button */
+.form-container {
+    margin-top: 20px;
+}
+
+.business-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.business-form label {
+    margin-bottom: 5px;
+    color: #dddddd; /* Light Grey Text for form labels */
+}
+
+.business-form input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #555555; /* Border Color for form input */
+    border-radius: 4px;
+    background-color: #444444; /* Darker Grey Background for form input */
+    color: #dddddd; /* Light Grey Text for form input */
+}
+
+.delete-button {
+    background-color: #cc0000; /* Dark Red Background for delete button */
+    color: #dddddd; /* Light Grey Text for delete button */
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Cinzel', serif;
+    font-weight: 700
+}
+
+.delete-button:hover {
+    background-color: #990000; /* Darker Red Background on hover for delete button */
+}
+
+.register-link {
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+    margin-left: auto; /* Push the link to the right */
+    margin-right: 20px; /* Add some right margin for spacing */
+    font-size: 16px; /* Adjust the font size */
+    font-weight: bold; /* Make the text bold */
+    cursor: pointer; /* Add a pointer cursor on hover */
+}
+
+.register-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}

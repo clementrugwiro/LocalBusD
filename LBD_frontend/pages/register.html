@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/register.css">
+    <title>Register - Local Business Directory</title>
+</head>
+<body onload="checkrole()">
+    <div class="header">
+        <a href="../index.html"><h1>Local Business Directory</h1></a>
+    </div>
+
+    <div class="register-container">
+        <h1>Register New User</h1>
+        <form id="registerForm">
+            <label for="firstname">First Name:</label>
+            <input type="text" id="firstname" name="firstname" required>
+
+            <label for="lastname">Last Name:</label>
+            <input type="text" id="lastname" name="lastname" required>
+
+            <label for="nationalId">National ID:</label>
+            <input type="text" id="nationalId" name="nationalId" required>
+
+            <label for="phonenumber">Phone Number:</label>
+            <input type="text" id="phonenumber" name="phonenumber" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="pwd">Password:</label>
+            <input type="password" id="password" name="pwd" required>
+
+            <label for="confirmPwd">Confirm Password:</label>
+            <input type="password" id="confirmPwd" name="confirmPwd" required>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <div id="busLoc">
+        
+    </div>
+    <script src="../js/register.js"></script>
+</body>
+</html>

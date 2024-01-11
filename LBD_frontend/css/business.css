@@ -1,0 +1,300 @@
+body,html{
+    height: 100%;
+    background-color: rgb(13, 14, 15);
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header {
+    height: 60px;
+    background-color: rgb(13, 14, 15);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.headerName{
+    width: 40%;
+}
+.headerName a{
+    text-decoration: none; 
+}
+#nav-ico{
+    width: 30px;
+    display: none;
+}
+.header li{
+    display: inline;
+    margin-left: 40px;
+}
+#btn{
+    color: rgb(241, 236, 254);
+    font-size: 19px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    font-family: 'Cinzel', serif;
+}
+#btn:hover{
+    border-bottom: 2px solid rgb(251, 216, 127);
+    cursor: pointer;
+}
+#logout{
+    color:rgb(251, 216, 127);
+    font-size: 19px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+}
+h1{
+    color: rgb(193,204,214);  
+    margin: auto;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-family: 'Cinzel', serif;
+}
+.footer{
+    width: 98%;
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    /* margin-left: 45px; */
+    height: 45px;
+    width: 100%;
+    margin-top: auto;
+}
+#clec{
+    color:rgb(251, 216, 127)
+}
+#about{
+    margin-top: 60px;
+    padding-left: 20px;
+    display: flex;
+}
+#aboutme{
+    width:55%;
+}
+#who{
+    display: flex;
+    border-bottom: 2px solid rgb(241, 239, 239);
+}
+#ques{
+    color: rgb(101, 107, 112);
+    width: 35%;
+    text-align:right;
+    padding-right: 50px;
+}
+#ques h3{
+    font-family: 'Cinzel', serif;
+}
+#ans{
+    color: rgb(255, 253, 253);
+}
+#ans h3{
+    font-family: 'Cinzel', serif;
+}
+li{
+    color: rgb(255, 253, 253);
+    font-size: 20px;
+}
+#aboutpic{
+    border: 2px solid rgb(255, 253, 253);
+}
+#aboutpic img{
+ height: 300px;
+ width: 400px;
+ object-fit: cover;
+}
+/* Add this style for the reviews button */
+.reviews-button {
+    background-color: #444444;
+    color: rgb(251, 216, 127);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.reviews-button:hover {
+    background-color: rgb(251, 216, 127);
+    color: rgb(13, 14, 15);
+    border: 2px solid rgb(251, 216, 127);
+}
+
+/* Additional styles for better consistency */
+
+#aboutpic {
+    border: 2px solid rgb(255, 253, 253);
+    margin-top: 10px; /* Add some spacing between the image and the button */
+}
+
+
+
+
+.footer{
+    width: 98%;
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    /* margin-left: 45px; */
+    height: 45px;
+    width: 100%;
+    margin-top: auto;
+}
+#foot{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Cinzel', serif;
+    color: rgb(251, 216, 127);
+    align-items: center;
+}
+#icon{
+    height: 30px;
+}
+.footer li{
+    display: inline;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+ 
+
+/* the pop up */
+/* Style for the modal container */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+  
+  /* Style for the modal content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+  }
+  
+  /* Style for the close button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close:hover {
+    color: black;
+  }
+  
+  /* my review form */
+  /* Add this to your CSS file */
+#reviewModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+#reviewFormContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #111111;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .modal-content{
+    background-color: #111111;
+  }
+  #reviewForm {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  
+  #reviewForm label {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color:rgb(251, 216, 127);
+    font-family: 'Cinzel', serif;
+  }
+  
+  #reviewForm input,
+  #reviewForm textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    font-family: 'Cinzel', serif;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    color:black;
+  }
+  
+  #reviewForm button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    color:rgb(251, 216, 127);
+    font-family: 'Cinzel', serif;
+  }
+  
+  #reviewForm button:hover {
+    background-color: #45a049;
+  }
+  
+
+  /* Style for individual review */
+.review {
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+}
+
+.review h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-family: 'Cinzel', serif;
+}
+
+.review p {
+    margin: 0;
+    font-family: 'Cinzel', serif;
+}
+
+.review p.rating {
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+}
+
+/* Style for the entire reviews container */
+#reviewsContainer {
+    padding: 20px;
+}

@@ -1,0 +1,116 @@
+body,html{
+    height: 100%;
+    background-color: rgb(13, 14, 15);
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.header{
+    height: 60px;
+    background-color: rgb(13, 14, 15);
+    display: flex;
+    position: sticky;
+    top: 0;
+    
+}
+.headerName{
+    width: 40%;
+}
+
+.headerName a{
+    text-decoration: none; 
+}
+#nav-ico{
+    width: 30px;
+    display: none;
+}
+.header li{
+display: inline;
+margin-left: 40px;
+}
+#btn{
+    color: rgb(241, 236, 254);
+    font-size: 19px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+    font-family: 'Cinzel', serif;
+}
+#btn:hover{
+    border-bottom: 2px solid rgb(251, 216, 127);
+    cursor: pointer;
+}
+#logout{
+    color:rgb(251, 216, 127);
+    font-size: 19px;
+    font-weight: bold;
+    background-color: transparent;
+    border: none;
+}
+.main{
+    color: rgb(248, 243, 243);
+    display: flex;
+    margin-top: -30px;
+}
+.imagexp img{
+    width: 536px;
+    height: 369px;
+    border-radius: 69px;
+    margin-top: 80px;
+}
+.intro{
+    margin-top: 30px;
+    width: 65%;
+    text-align: left;
+    padding-left: 20px;
+    font-family: 'Cinzel', serif;
+}
+h1{
+    color: rgb(193,204,214);  
+    margin: auto;
+    margin-top: 1%;
+    margin-left: 5%;
+    font-family: 'Cinzel', serif;
+}
+#clec{
+    color:rgb(251, 216, 127)
+}
+
+#hello{
+    font-size: 38px;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 200px;
+    color: aliceblue;
+}
+
+.footer{
+    width: 98%;
+    display: flex;
+    background-color: transparent;
+    justify-content: space-between;
+    /* margin-left: 45px; */
+    height: 45px;
+    width: 100%;
+    margin-top: auto;
+}
+#foot{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Cinzel', serif;
+    color: rgb(251, 216, 127);
+    align-items: center;
+}
+#icon{
+    height: 30px;
+}
+.footer li{
+    display: inline;
+    margin-left: 50px;
+    margin-right: 50px;
+}
